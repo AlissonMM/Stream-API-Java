@@ -82,6 +82,8 @@ Exemplo: `stream.allMatch(n -> n > 0)`
 Exemplo: stream.noneMatch(s -> s.isEmpty())
 - `min(Comparator<T> comparator)` e `max(Comparator<T> comparator)`: Encontra o elemento mínimo e máximo da Stream, respectivamente, de acordo com o comparador fornecido.
 Exemplo: `stream.min(Comparator.naturalOrder())` ou `stream.max(Comparator.naturalOrder())`
+- `findFirst()`: Encontra o primeiro elemento.
+Exemplo: `numbers.stream().findFirst()`
 - `reduce(T identity, BinaryOperator<T> accumulator)`: Combina os elementos da Stream usando o acumulador especificado e retorna o resultado final.
 Exemplo: `stream.reduce(0, (a, b) -> a + b)`
 
